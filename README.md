@@ -58,4 +58,4 @@ import DeleteButton from './path/to/DeleteButton';
   Delete
 </DeleteButton>
 ```
-The example above demonstrates how to implement the DeleteButton in an application. onClick is a function that is triggered after the button's animation completes, and onAnimationEnd is called with a boolean indicating whether the animation is starting or ending.
+The example above demonstrates how to implement the `DeleteButton` in an application. `onClick` is a function that is triggered after the button's animation completes, and `onAnimationEnd` is called with a boolean indicating whether the animation is starting or ending.
