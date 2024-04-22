@@ -32,7 +32,7 @@ import DeleteButton from './path/to/DeleteButton';
   onClick={() => console.log("Item deleted!")}
   className="custom-delete-button"
   onAnimationEnd={(animating) => console.log("Animation state:", animating)}>
-  Delete Item
+  Delete
 </DeleteButton>
 ```
 The example above demonstrates how to implement the DeleteButton in an application. onClick is a function that is triggered after the button's animation completes, and onAnimationEnd is called with a boolean indicating whether the animation is starting or ending.
