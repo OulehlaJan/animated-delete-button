@@ -13,7 +13,7 @@
 The `DeleteButton` is a reusable React component that provides an animated button for deleting items. This component allows for visually appealing interactions during item removal and includes the ability to control the animation state from the external component.
 
 # 💻 Demo
-[![Netlify Status](https://api.netlify.com/api/v1/badges/795431f2-67e2-4ada-b4c0-65480a362f10/deploy-status)](https://app.netlify.com/sites/animated-delete-button-oulehlajan/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/795431f2-67e2-4ada-b4c0-65480a362f10/deploy-status)](https://app.netlify.com/sites/animated-delete-button-oulehlajan/deploys) <br />
 [Animated Delete Button](https://animated-delete-button-oulehlajan.netlify.app/):point_left:
 
 ## :white_check_mark: Features
