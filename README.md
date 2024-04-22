@@ -22,7 +22,7 @@ The `DeleteButton` is a reusable React component that provides an animated butto
 
 <!-- GIF -->
 <p align="center">
-  <img src="https://github.com/OulehlaJan/animated-delete-button/assets/128754127/a0518cef-44a4-445e-a428-81dee3101985" />
+  <img src="assets/DeleteButton.gif" />
 </p>
 
 ## :white_check_mark: Features
