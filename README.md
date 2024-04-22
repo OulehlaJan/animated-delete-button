@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# DeleteButton Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The `DeleteButton` is a reusable React component that provides an animated button for deleting items. This component allows for visually appealing interactions during item removal and includes the ability to control the animation state from the external component.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Animation**: The component includes an internal animation that is triggered on click. The animation lasts for 2050 ms, during which the external `onClick` function call is delayed until the animation completes.
+- **Customization**: The `className` prop allows for customizing the button styles.
+- **Flexibility**: The `children` prop allows for flexible button content, including the possibility of animating individual characters if `children` is a string.
 
-### `npm start`
+## Props
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `onClick` (Function): Function to be called after the animation completes.
+- `children` (node): Content displayed on the button. If it's a string, each character is animated separately.
+- `className` (String): Optional. CSS classes for customizing the button appearance.
+- `onAnimationEnd` (Function): Optional. Function called at the start and end of the animation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Add `DeleteButton.js` and `DeleteButton.scss` to your project in the `src/components` directory.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Import `DeleteButton` into your component:
 
-### `npm run build`
+```jsx
+import DeleteButton from './path/to/DeleteButton';
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Usage Example
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```jsx
+<DeleteButton 
+  onClick={() => console.log("Item deleted!")}
+  className="custom-delete-button"
+  onAnimationEnd={(animating) => console.log("Animation state:", animating)}>
+  Delete Item
+</DeleteButton>
+```
+The example above demonstrates how to implement the DeleteButton in an application. onClick is a function that is triggered after the button's animation completes, and onAnimationEnd is called with a boolean indicating whether the animation is starting or ending.
