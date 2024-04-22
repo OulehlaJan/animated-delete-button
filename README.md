@@ -1,8 +1,8 @@
-# DeleteButton Component
+# :recycle: DeleteButton Component
 
 The `DeleteButton` is a reusable React component that provides an animated button for deleting items. This component allows for visually appealing interactions during item removal and includes the ability to control the animation state from the external component.
 
-## Features
+## :white_check_mark: Features
 
 - **Animation**: The component includes an internal animation that is triggered on click. The animation lasts for 2050 ms, during which the external `onClick` function call is delayed until the animation completes.
 - **Customization**: The `className` prop allows for customizing the button styles.
@@ -25,7 +25,7 @@ Import `DeleteButton` into your component:
 import DeleteButton from './path/to/DeleteButton';
 ```
 
-# Usage Example
+# :computer: Usage Example
 
 ```jsx
 <DeleteButton 
