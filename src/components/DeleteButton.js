@@ -15,7 +15,7 @@ const DeleteButton = ({ onClick, children, className, onAnimationEnd }) => {
     }, 2050); // Duration of the DeleteButton animation
   }
 
-  // Create an array of <span> elements from the children string for individual letter animation
+  // Array of <span> elements from the children string for individual letter animation
   const textSpans = children && typeof children === 'string'
     ? children.split('').map((char, index) => (
       <span key={index}>{char}</span>
