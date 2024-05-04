@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './DeleteButton.scss';
 import PropTypes from 'prop-types';
-// Define a button component for deleting elements with animation
+
 const DeleteButton = ({ onClick, children, className, onAnimationEnd }) => {
   const [isAnimating, setIsAnimating] = useState(false); // State to manage animation
 
