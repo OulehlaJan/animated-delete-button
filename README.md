@@ -8,7 +8,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=noto&weight=600&size=22&duration=4000&pause=4350&color=FFA657&center=true&vCenter=true&random=false&width=910&lines=a+self-taught+passionate+Web+developer+from+Czechia" />
 </p>
 
-# :recycle: DeleteButton Component
+# :recycle: Reusable DeleteButton Component
 
 The `DeleteButton` is a reusable React component that provides an animated button for deleting items. This component allows for visually appealing interactions during item removal and includes `callbacks` to handle the animation state changes, allowing external components to react to the start and end of the animation.
 
