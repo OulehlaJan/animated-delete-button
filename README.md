@@ -16,9 +16,9 @@ The `DeleteButton` is a reusable React component that provides an animated butto
 [![Netlify Status](https://api.netlify.com/api/v1/badges/795431f2-67e2-4ada-b4c0-65480a362f10/deploy-status)](https://app.netlify.com/sites/animated-delete-button-oulehlajan/deploys) <br />
 
 <!-- Demo Link -->
-<p align="center">
+<h3 align="center">
   <a href="https://animated-delete-button-oulehlajan.netlify.app/">Animated Delete Button</a>:point_left: <br />
-</p>
+</h3>
 
 <!-- GIF -->
 <p align="center">
